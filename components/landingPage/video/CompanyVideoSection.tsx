@@ -137,7 +137,8 @@ export default function CompanyVideoSection() {
       >
         <video
           ref={videoRef}
-          src="/videos/hez-company.mp4"
+          src="https://www.hezenerji.com/media/hez-enerji.mp4"
+          aria-label="Hez Enerji video"
           className="w-full h-full object-cover"
           onTimeUpdate={handleTimeUpdate}
           onEnded={() => {
