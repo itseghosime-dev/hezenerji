@@ -54,13 +54,22 @@ export default function NavbarShell({
       setScrolled(y > 40);
       setPastHero(y > window.innerHeight - 80);
 
-      if (y <= 40) setIsWhiteTheme(false);
+      if (y <= 40) {
+        setIsWhiteTheme(false);
+      } else if (stateRef.current.hovered || stateRef.current.langOpen) {
+        // FIX: Force white theme immediately if user scrolls down while holding the navbar open
+        setIsWhiteTheme(true);
+      }
     };
 
     const handleMouseMove = (e: MouseEvent) => {
       if (e.clientY < 100) {
         clearHideTimer();
         setIsHovered(true);
+        // FIX: Ensure theme turns white if cursor enters the top zone while already scrolled down
+        if (window.scrollY > 40) {
+          setIsWhiteTheme(true);
+        }
       } else {
         if (
           !stateRef.current.langOpen &&
