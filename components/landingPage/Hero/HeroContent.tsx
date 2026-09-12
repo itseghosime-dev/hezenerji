@@ -3,7 +3,7 @@ import { FaArrowRight } from "react-icons/fa6";
 export default function HeroContent() {
   return (
     <div className="max-w-3xl">
-      <h1 className="font-heading text-5xl md:text-6xl lg:text-[5.5rem] font-medium leading-[1.05] tracking-tight text-white mb-6">
+      <h1 className="font-heading text-5xl md:text-6xl lg:text-[5.5rem] font-semibold leading-[1.05] tracking-tight text-white mb-5">
         <span className="block overflow-hidden pb-2">
           <span className="block reveal-text opacity-0 origin-bottom-left">
             The Next Era of
@@ -17,7 +17,7 @@ export default function HeroContent() {
         </span>
       </h1>
 
-      <p className="reveal-fade opacity-0 text-base md:text-xl font-light text-white/90 leading-relaxed max-w-xl mb-10">
+      <p className="reveal-fade opacity-0 text-base md:text-xl font-light text-white/90 leading-relaxed max-w-xl mb-7">
         Transforming geothermal resources into reliable energy, green hydrogen,
         and sustainable lithium for a zero-carbon economy.
       </p>
