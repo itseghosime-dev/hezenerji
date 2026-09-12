@@ -41,7 +41,7 @@ export default function NavbarShell({
     clearHideTimer();
     stateRef.current.timer = setTimeout(() => {
       setIsHovered(false);
-    }, 40000);
+    }, 12000);
   }, [clearHideTimer]);
 
   useEffect(() => {
