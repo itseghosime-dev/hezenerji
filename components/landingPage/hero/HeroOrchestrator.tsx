@@ -144,7 +144,7 @@ export default function HeroOrchestrator({
   return (
     <section
       ref={containerRef}
-      className="relative flex flex-col justify-between min-h-svh w-full overflow-hidden bg-slate-950 font-dmsans"
+      className="relative flex flex-col justify-between min-h-svh w-full overflow-hidden bg-slate-950 font-dmsans pt-40 lg:pt-28"
     >
       {/* BACKGROUND */}
       <div className="absolute inset-0 z-0 overflow-hidden bg-slate-950">
