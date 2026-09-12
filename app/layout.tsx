@@ -81,7 +81,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${poppins.variable} ${dmSans.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col pb-[600vh]">
+      <body className="min-h-full flex flex-col">
         <Navbar />
         {children}
       </body>
