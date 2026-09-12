@@ -49,7 +49,7 @@ export default function Footer() {
               />
               <button
                 type="submit"
-                className="bg-primary text-slate-950 rounded-full px-6 py-2.5 text-[13px] font-bold tracking-wide uppercase hover:bg-slate-900 hover:text-white transition-colors duration-300 shrink-0"
+                className="bg-primary text-slate-950 rounded-full px-6 flex items-center gap-3 py-2.5 text-[13px] font-bold tracking-wide uppercase hover:bg-slate-900 hover:text-white transition-colors duration-300 shrink-0"
               >
                 Subscribe <MdOutlineArrowOutward />
               </button>
