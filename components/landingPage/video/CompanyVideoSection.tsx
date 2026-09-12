@@ -129,6 +129,7 @@ export default function CompanyVideoSection() {
   return (
     <section
       ref={sectionRef}
+      id="company"
       className="relative w-full bg-white flex items-center justify-center py-20 lg:py-0 lg:h-screen z-20"
     >
       <div
@@ -138,6 +139,7 @@ export default function CompanyVideoSection() {
         <video
           ref={videoRef}
           src="https://www.hezenerji.com/media/hez-enerji.mp4"
+          poster="/images/assets/poster.png"
           aria-label="Hez Enerji video"
           className="w-full h-full object-cover"
           onTimeUpdate={handleTimeUpdate}
