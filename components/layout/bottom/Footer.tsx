@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { FaLinkedinIn, FaXTwitter, FaInstagram } from "react-icons/fa6";
+import { MdOutlineArrowOutward } from "react-icons/md";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -50,7 +51,7 @@ export default function Footer() {
                 type="submit"
                 className="bg-primary text-slate-950 rounded-full px-6 py-2.5 text-[13px] font-bold tracking-wide uppercase hover:bg-slate-900 hover:text-white transition-colors duration-300 shrink-0"
               >
-                Subscribe ↗
+                Subscribe <MdOutlineArrowOutward />
               </button>
             </form>
 
@@ -93,7 +94,7 @@ export default function Footer() {
                 <li><a href="#" className="text-[14px] text-slate-500 hover:text-primary transition-colors">Investor Relations</a></li>
                 <li><a href="#" className="text-[14px] text-slate-500 hover:text-primary transition-colors">Media & Press</a></li>
                 <li><a href="#" className="text-[14px] text-slate-500 hover:text-primary transition-colors">Careers</a></li>
-                <li><a href="https://margunenerji.com.tr" target="_blank" rel="noreferrer" className="text-[14px] text-slate-500 hover:text-primary transition-colors flex items-center gap-1">Margun Enerji ↗</a></li>
+                <li><a href="https://margunenerji.com.tr" target="_blank" rel="noreferrer" className="text-[14px] text-slate-500 hover:text-primary transition-colors flex items-center gap-1">Margun Enerji <MdOutlineArrowOutward /></a></li>
               </ul>
             </div>
 
