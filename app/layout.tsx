@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { DM_Sans, Poppins } from "next/font/google";
 import type { Viewport } from "next";
 import "./globals.css";
+import Navbar from "@/components/layout/top/Navbar";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -24,6 +25,12 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL ||
+      (process.env.VERCEL_URL
+        ? `https://${process.env.VERCEL_URL}`
+        : "http://localhost:3000"),
+  ),
   title: {
     default: "Hez Enerji | Pioneering Turkey’s Clean Energy Future",
     template: "%s | Hez Enerji",
@@ -74,7 +81,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${poppins.variable} ${dmSans.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col pb-[600vh]">
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }

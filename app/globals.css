@@ -143,3 +143,46 @@
     display: none;
   }
 }
+
+/* =========================================
+   GOOGLE TRANSLATE BANNER ASSASSINATION
+   ========================================= */
+
+/* 1. Hide the banner iframe completely */
+iframe.skiptranslate,
+.goog-te-banner-frame {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* 2. Prevent Google from pushing the body down 40px */
+body {
+  top: 0px !important;
+  position: static !important;
+}
+
+/* 3. Hide the hover tooltips that appear over translated text */
+#goog-gt-tt,
+.goog-te-balloon-frame {
+  display: none !important;
+}
+
+/* 4. Remove the weird blue background/shadow Google adds on hover */
+font {
+  background: transparent !important;
+  color: inherit !important;
+  box-shadow: none !important;
+}
+
+.goog-te-gadget,
+.goog-te-gadget-simple,
+.goog-te-gadget-icon,
+.goog-logo-link,
+.goog-te-spinner-pos,
+.goog-te-spinner-animation,
+.VIpgJd-ZVi9od-aZ2wEe-wOHMyf {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
