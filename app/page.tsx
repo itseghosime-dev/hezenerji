@@ -10,7 +10,6 @@ export default function Home() {
   return (
     <main>
       <HeroSection />
-      {/* Learning Github */}
       <ExpertiseSection />
       <CompanyVideoSection />
       <FlagshipProject />
